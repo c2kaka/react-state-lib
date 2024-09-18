@@ -1,0 +1,6 @@
+# pnpm 
+.pnpm-store/
+node_modules
+
+#idea
+.idea
