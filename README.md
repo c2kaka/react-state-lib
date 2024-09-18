@@ -8,3 +8,15 @@ pnpm init
 touch .gitignore
 touch README.md
 ```
+
+### pnpm monorepo
+```shell
+touch pnpm-workspace.yaml
+``` 
+
+### 初始化文件目录
+
+### 安装 eslint
+```shell
+pnpm add eslint -wD
+```
