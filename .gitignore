@@ -1,6 +1,7 @@
 # pnpm 
 .pnpm-store/
 node_modules
+pnpm-lock.yaml
 
 #idea
 .idea
