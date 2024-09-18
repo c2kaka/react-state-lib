@@ -68,3 +68,64 @@ touch .eslintrc.json
 touch .eslintignore
 touch .prettierignore
 ```
+
+## 安装配置 rollup
+```shell
+pnpm add rollup -wD
+```
+
+配置 packges/xxx 各子项的 package.json
+```json5
+"exports": {
+  ".": {
+    "import": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.mjs"
+    },
+    "require": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.cjs"
+    }
+  }
+},
+```
+```json5
+{
+  "scripts": {
+    "build": "rollup -c"
+  }
+}
+```
+
+### 安装concurrently开启并行编译
+```shell
+pnpm add concurrently -wD
+```
+
+配置rollup.config.ts
+```shell
+touch rollup.config.ts
+```
+rollup.config.ts
+```typescript
+```
+
+### 安装配置 rollup 插件和 babel
+安装 rollup 插件
+```shell
+pnpm add rollup-plugin-dts -wD
+pnpm add rollup-plugin-node-resolve -wD
+pnpm add rollup-plugin-commonjs -wD
+pnpm add @rollup/plugin-commonjs -wD
+pnpm add @rollup/plugin-node-resolve -wD
+pnpm add @rollup/plugin-typescript -wD
+pnpm add @rollup/plugin-babel -wD
+pnpm add rollup-plugin-banner2 -wD
+```
+安装 babel
+```shell
+pnpm add @babel/core -wD
+pnpm add @babel/preset-env -wD
+pnpm add @babel/plugin-transform-react-jsx -wD
+pnpm add @babel/plugin-transform-typescript -wD
+```
