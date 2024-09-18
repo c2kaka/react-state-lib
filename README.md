@@ -16,7 +16,7 @@ touch pnpm-workspace.yaml
 
 ### 初始化文件目录
 
-### 安装配置TypeScript
+## 安装配置TypeScript
 安装TypeScript lib
 ```shell
 pnpm add typescript -wD
@@ -45,21 +45,26 @@ tsconfig.json
 }
 ```
 
+## 安装配置 eslint
+### 安装 eslint & eslint-typescript
+```shell
+pnpm add eslint -wD 
+pnpm add eslint-import-resolver-typescript -wD 
+pnpm add eslint-plugin-import -wD
+pnpm add @typescript-eslint/eslint-plugin -wD
+pnpm add @typescript-eslint/parser -wD
+```
 
+### 安装 prettier & eslint-config-prettier
+```shell
+pnpm add prettier -wD
+pnpm add eslint-config-prettier -wD
+pnpm add eslint-plugin-prettier -wD
+```
 
-[//]: # (### 安装配置 eslint)
-
-[//]: # (```shell)
-
-[//]: # (pnpm add eslint eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks -wD)
-
-[//]: # (```)
-
-[//]: # (配置eslint rule)
-
-[//]: # (```shell)
-
-[//]: # (touch .eslintrc.json)
-
-[//]: # (touch .eslintignore)
+配置eslint rule
+```shell
+touch .eslintrc.json
+touch .eslintignore
+touch .prettierignore
 ```
