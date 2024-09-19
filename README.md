@@ -129,3 +129,26 @@ pnpm add @babel/preset-env -wD
 pnpm add @babel/plugin-transform-react-jsx -wD
 pnpm add @babel/plugin-transform-typescript -wD
 ```
+
+## 安装配置 jest
+```shell
+pnpm add jest -wD
+pnpm add ts-jest -wD
+pnpm add jsdom -wD
+pnpm add jest-environment-jsdom -wD
+pnpm add @types/jest -wD
+pnpm add @jest/types -wD
+```
+
+配置 jest.preset.js, jest.config.ts
+```shell
+touch jest.config.ts
+touch jest.preset.js
+``` 
+
+配置 npm script
+```json5
+"scripts": {
+  "test": "jest"
+}
+```
