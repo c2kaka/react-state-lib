@@ -53,6 +53,9 @@ pnpm add eslint-import-resolver-typescript -wD
 pnpm add eslint-plugin-import -wD
 pnpm add @typescript-eslint/eslint-plugin -wD
 pnpm add @typescript-eslint/parser -wD
+pnpm add eslint-plugin-react-hooks -wD
+pnpm add globals -wD
+pnpm add typescript-eslint -wD
 ```
 
 ### 安装 prettier & eslint-config-prettier
@@ -64,8 +67,7 @@ pnpm add eslint-plugin-prettier -wD
 
 配置eslint rule
 ```shell
-touch .eslintrc.json
-touch .eslintignore
+touch eslint.config.mjs
 touch .prettierignore
 ```
 
