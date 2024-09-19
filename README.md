@@ -152,3 +152,11 @@ touch jest.preset.js
   "test": "jest"
 }
 ```
+
+## 配置github workflows
+```shell
+mkdir .github
+mkdir .github/workflows
+touch .github/workflows/test.yml
+touch .github/workflows/lint-and-type.yml
+```

@@ -8,7 +8,11 @@
     "typecheck:ci": "pnpm -r --parallel run typecheck",
     "build": "concurrently 'pnpm:build:*'",
     "build:zustand": "rollup -c --package zustand",
-    "test": "jest --passWithNoTests --config jest.config.ts"
+    "test": "jest --passWithNoTests --config jest.config.ts",
+    "prettier": "prettier '**/{examples,src,__tests__,website}/**/*.{js,jsx,ts,tsx,md}' --write",
+    "prettier:ci": "prettier '**/{examples,src,__tests__,website}/**/*.{js,jsx,ts,tsx,md}' --list-different",
+    "eslint": "eslint --no-eslintrc -c .eslintrc.json --fix '**/src/*.{js,jsx,ts,tsx}'",
+    "eslint:ci": "eslint --no-eslintrc -c .eslintrc.json '**/src/*.{js,jsx,ts,tsx}'"
   },
   "keywords": [],
   "author": "",
