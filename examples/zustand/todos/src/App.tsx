@@ -50,8 +50,8 @@ const TodoItem = ({ item }: { item: Todo }) => {
   const toggleCompleted = () =>
     setTodos((prevTodos) =>
       prevTodos.map((prevItem) =>
-        prevItem.id === id ? { ...prevItem, completed: !completed } : prevItem
-      )
+        prevItem.id === id ? { ...prevItem, completed: !completed } : prevItem,
+      ),
     );
 
   const remove = () => {

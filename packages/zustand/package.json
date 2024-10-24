@@ -37,5 +37,15 @@
   "engines": {
     "node": ">=12.7.0"
   },
+  "dependencies": {
+    "use-sync-external-store": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/use-sync-external-store": "^0.0.6",
+    "zustand": "^4.5.0"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
   "contributors": []
 }
